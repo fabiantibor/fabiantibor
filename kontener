@@ -1,0 +1,6 @@
+#!/bin/bash
+lxc init ubuntu:16.04 fabiantibor
+lxc start fabiantibor
+sleep 15
+lxc exec fabiantibor -- apt update --yes
+lxc exec fabiantibor -- apt upgrade --yes
